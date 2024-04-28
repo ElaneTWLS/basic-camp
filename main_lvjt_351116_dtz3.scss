@@ -1,0 +1,94 @@
+kiwi - 60,90,12,71,72,18,64,96,53,70,99,31,77,36,55,88,20,94,51,29,55,80,81,32,34,1,96,1,8,51,89,13,91,86,92,54,57,8,37,63,95,7,67,5,67,25,59,98,35,11,45,34,38,99,59,43,14,83,78,37,85,17,56,56,59,30,78,82,37
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const removeDuplicates = array => Array.from(new Set(array));
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+true + 17
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
+const removeDuplicates = array => Array.from(new Set(array));
+const reverseWords = str => str.split(" ").reverse().join(" ");
+false / 3,29,60,1,67,11,13,6,12,50,1,36,91,18,82,99,2,94,59,83,64,36,30,68,14,6,38,98,56,48,82,53,98,13,4,31,26,64,74,36,38,73,74,57,0,63,2,5,20,1,99,43,60,45,31
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const getRandomElement = array => array[getRandomIndex(array)];
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+43 / 91
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+kiwi
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+const squareRoot = num => Math.sqrt(num);
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+apple
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+true / 23
+class MyClass { constructor() { this.property = getRandomString(); } }
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+10 / 18,86,14,93,0,19,48,79,58,66,55,26,83,46,92,56,89,60,74,80,86,75,30,40,21,74,18,5,24,64,74,30,29
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+
+true / 95,23,92,30,21,60,71,67,24,56,81,37,37,21,13,55,9,84,58,98,3,63,45,93,43,68,92,21,55,31,97,86,70,65,79,4,85,0,92,18,54,83,46,58,41,98,0,85,91,4,56,5,68,79,88,86,48,53,19,33,3,43,42,30,44
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
+46 * 33,92,21,19,2,67,26,2,37,75,94,16,28,90,3,0,38,38,91,94,93,41,91,69,0,20,81,22,98,37,36
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+kiwi
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
+7 / true
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+79,36,26,47,76,6,55,66,25,47,18,25,75,97,27,54,74,64,35,86,22,69,48,22,64,83,32,54,17,20,6,19,50,51,73,20,56,41,96,54,9,61,21,13,49,35,93,56,17,74,56,86,58 + true
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+8 - grape
+
+const removeDuplicates = array => Array.from(new Set(array));
+
+85 * 67,83,43,15,21,18,25,13,72,70,20,65,34,19,1,30
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+orange * false
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+kiwi
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+true + true
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+true - 57
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+
+const multiply = (a, b) => a * b;
+apple
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const squareRoot = num => Math.sqrt(num);
